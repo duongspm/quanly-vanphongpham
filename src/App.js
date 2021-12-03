@@ -1,24 +1,37 @@
-import logo from './logo.svg';
+import logo from './logo_unilogistics.svg';
 import './App.css';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from "react-router-dom";
+import TopMenu from './component/Menu/TopMenu';
+import Nav from './component/Nav/Nav';
+import DanhSachPhieuNhap from './component/PhieuNhap/DanhSachPhieuNhap';
+import LoadPhieuCap from './component/PhieuCap/DanhSachPhieuCap';
+import DanhSachPhongBan from './component/PhongBan/DanhSachPhongBan';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <TopMenu/>
+      <br/>
+      <Nav/>
+      <br/>
+      <Switch>
+        <Route path="/danh-sach-phong-ban">
+          <DanhSachPhongBan/>
+        </Route>
+        <Route path="/danh-sach-phieu-cap">
+          <LoadPhieuCap/>
+        </Route>
+        <Route path="/danh-sach-phieu-nhap">
+          <DanhSachPhieuNhap/>
+        </Route>
+      </Switch>
+    </Router>
+    
   );
 }
 
