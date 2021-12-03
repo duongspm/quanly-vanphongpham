@@ -71,6 +71,7 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 
 - Các câu lệnh thường dùng
     git status
+    git pull
     git add .
     git commit -m "nội dung"
     git push
