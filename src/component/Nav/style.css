@@ -27,35 +27,7 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Nunito", sans-serif;
 }
 
-/*--------------------------------------------------------------
-# Back to top button
---------------------------------------------------------------*/
-.back-to-top {
-  position: fixed;
-  visibility: hidden;
-  opacity: 0;
-  right: 15px;
-  bottom: 15px;
-  z-index: 996;
-  background: #f7941d;
-  width: 40px;
-  height: 40px;
-  border-radius: 50px;
-  transition: all 0.4s;
-}
-.back-to-top i {
-  font-size: 38px;
-  color: rgb(0, 0, 0);;
-  line-height: 0;
-}
-.back-to-top:hover {
-  background: #e9607a;
-  color: rgb(0, 0, 0);;
-}
-.back-to-top.active {
-  visibility: visible;
-  opacity: 1;
-}
+
 
 /*--------------------------------------------------------------
 # Header
@@ -64,6 +36,7 @@ h1, h2, h3, h4, h5, h6 {
   transition: all 0.5s;
   z-index: 997;
   padding: 20px 0;
+  width: 100%;
 }
 #header .logo {
   font-size: 30px;
@@ -94,6 +67,7 @@ h1, h2, h3, h4, h5, h6 {
 .navbar2 {
   padding: 30px;
   background-color: rgb(232, 232, 240);
+  justify-content: space-between;
 }
 .navbar2 ul {
   margin: 0;
@@ -292,7 +266,7 @@ h1, h2, h3, h4, h5, h6 {
 .navbar2-mobile .dropdown > .dropdown-active {
   display: block;
 }
-
-a.bell{
-  font-size: 90px;
+.dropdown-item-icon{
+  font-size: 204px;
+  color: #21409a;
 }

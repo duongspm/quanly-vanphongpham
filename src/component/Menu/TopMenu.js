@@ -6,45 +6,90 @@ import logo from '../../assets/images/logo_full.png';
 class TopMenu extends Component {
     render() {
         return (
-            <header id="header" className="fixed-top">
+            <header id="header" className="fixed-top d-flex align-items-center ">
                 <div className="container d-flex align-items-center justify-content-between">
                     <nav id="navbar" className="navbar">
                         <ul>
-                            <li><a href="" className="logo_full"><img src={logo} alt className="img-fluid" /></a></li>
-                            <li><h1 className="title">QUẢN LÝ VPP TRONG CÔNG TY</h1></li>
-                            <li><a className="nav-link scrollto" ></a></li>
-                            <li><a className="nav-link scrollto" ></a></li>
-                            <li><a className="nav-link scrollto" ></a></li>
-                            <li><a className="nav-link scrollto" ></a></li>
-                            <li><a className="nav-link scrollto" ></a></li>
-                            <li><a className="nav-link scrollto" ></a></li>
+                            <li><a className="logo_full d-flex align-items-center" href><img src={logo} alt="" className="img-fluid" /></a></li>
+                            <li><h1 className="title-right">QUẢN LÝ VPP TRONG CÔNG TY</h1></li>
+                           
                             <li>
-                                <a className="nav-link scrollto" >
+                                <a className="nav-link scrollto" href>
                                 </a>
-                                <div className="wrap tabne">
+                                <div className="wrap title-right-300">
                                     <div className="search">
-                                        <input type="text" className="searchTerm textsearch" placeholder="What are you looking for?" />
                                         <button type="submit" className="searchButton">
                                             <i className="fa fa-search" />
                                         </button>
+                                        <input type="text" className="searchTerm" placeholder="What are you looking for?" />
                                     </div>
                                 </div>
                             </li>
-                            
-                            <li><a className="nav-link scrollto" ></a></li>
-                            <li><a className="nav-link scrollto" ></a></li>
-                            <li><a className="nav-link scrollto" ></a></li>
-                            <li><a className="nav-link scrollto textsearch" >Việt Nam</a></li>
-                            <li><a><i class="fa fa-bell"></i></a></li>
-                            <li><a className="nav-link scrollto"><i class="fas fa-chart-pie"></i></a></li>
-                            <li><a className="name">Uncle Duongg</a></li>
-                            <li><a className="nav-link scrollto" ></a></li>
-                            <li><a href="" className="logo"><img src={avata1} alt className="img-fluid" /></a></li>
+                            <li><a className="nav-link scrollto textsearch" href>Việt Nam</a></li>
+                            <li>
+                                <i class="header__navbar-icon fa fa-bell"></i>
+                                <span className="header__navbar-number-green">4</span>
+                            </li>
+                            <li>
+                                <i class="header__navbar-icon fa fa-adjust"></i>
+                                <span className="header__navbar-number-blue">2</span>
+                            </li>
+                            <li>
+                                <a className="name" href>
+                                    <ul>
+                                        <li className="dropdown name"><a href><span className="name">Uncle Duongg</span> <i className="bi bi-chevron-right" /></a>
+                                            <ul className="dropdown-menu dropdown-menu-end dropdown-menu-arrow profile">
+                                                <li className="dropdown-header">
+                                                    <h6>Uncle Duongg</h6>
+                                                    <span>Web Designer</span>
+                                                </li>
+                                                <li>
+                                                    <hr className="dropdown-divider" />
+                                                </li>
+                                                <li>
+                                                    <a className="dropdown-item align-items-center" href>
+                                                        <i className="fa fa-user dropdown-item-icon"></i>
+                                                        <p>My Profile</p>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <hr className="dropdown-divider" />
+                                                </li>
+                                                <li>
+                                                    <a className="dropdown-item d-flex align-items-center" href>
+                                                        <i class="fa fa-cog dropdown-item-icon"></i>
+                                                        <span>Account Settings</span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <hr className="dropdown-divider" />
+                                                </li>
+                                                <li>
+                                                    <a className="dropdown-item d-flex align-items-center" href>
+                                                        <i class="fa fa-question-circle dropdown-item-icon"></i>
+                                                        <span>Need Help?</span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <hr className="dropdown-divider" />
+                                                </li>
+                                                <li>
+                                                    <a className="dropdown-item d-flex align-items-center" href>
+                                                        <i class="fa fa-sign-out dropdown-item-icon"></i>
+                                                        <span>Sign Out</span>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </a>
+                            </li>
+                            <li><a href className="logo"><img src={avata1} alt="" className="img-fluid" /></a></li>
+                           
                         </ul>
                     </nav>
                 </div>
             </header>
-            
         );
     }
 }

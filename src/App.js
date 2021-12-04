@@ -1,10 +1,8 @@
-import logo from './logo_unilogistics.svg';
 import './App.css';
 import {
   BrowserRouter as Router,
   Switch,
   Route,
-  Link
 } from "react-router-dom";
 import TopMenu from './component/Menu/TopMenu';
 import Nav from './component/Nav/Nav';
@@ -20,7 +18,7 @@ function App() {
       <Nav/>
       <br/>
       <Switch>
-        <Route path="/danh-sach-phong-ban">
+        <Route exact path="/danh-sach-phong-ban">
           <DanhSachPhongBan/>
         </Route>
         <Route path="/danh-sach-phieu-cap">

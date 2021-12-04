@@ -5,7 +5,7 @@ class DanhSachPhieuNhap extends Component {
         return (
             <>
             <header className="App-header">
-                <img src="https://i.pinimg.com/564x/62/fa/a6/62faa64e50b6d1e7f85231d292ad6c87.jpg"></img>
+                <img src="https://i.pinimg.com/564x/62/fa/a6/62faa64e50b6d1e7f85231d292ad6c87.jpg" alt=""></img>
                 <h1>Danh sách Phiếu Nhập</h1>
             </header>
             </>
