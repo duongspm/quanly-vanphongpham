@@ -1,0 +1,162 @@
+.phieucap__header{
+    background-color: #F1F1F1;
+    height: 72px;
+    display:flex;
+    justify-content: space-between;
+    padding-top: 0;
+    margin-top: 0;
+}
+.phieucap__header__title{
+    color: black;
+    align-items: center;
+    margin-left: 10px;
+    padding-top: 10px;
+}
+.phieucap__header__link{
+    align-items: center;
+    margin-right: 20px;
+    padding-top: 23px;
+    font-size: 18px;
+}
+.phieucap__header__link a{
+    color: darkblue;
+    border-bottom: 4px solid #f7941d;
+}
+.phieucap__timkiem{
+    margin-left: 10px;
+    padding-top: 30px;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.phieucap__timkiem__search {
+    position: relative;
+    display: flex;
+}
+
+.phieucap__timkiem__search--searchTerm {
+width: 188px;
+border: 2px solid #f7941d;
+border-left: none;
+padding: 5px;
+height: 30px;
+border-radius: 0 8px 8px 0;
+outline: none;
+color: #000000;
+}
+
+.phieucap__timkiem__search--searchTerm:focus{
+color: #000000;
+} 
+
+.phieucap__timkiem__search--searchTerm--date {
+width: 150px;
+border: 2px solid #f7941d;
+padding: 5px;
+height: 20px;
+border-radius:50px;
+outline: none;
+color: #000000;
+}
+
+
+
+.phieucap__timkiem__search--searchButton{
+width: 40px;
+background-color: #ffffff;
+border: 2px solid #f7941d;
+border-right: none;
+text-align: center;
+border-radius: 8px 0 0 8px;
+cursor: pointer;
+font-size: 20px;
+}
+
+.phieucap__timkiem i{
+color: #f7941d;
+}
+
+.phieucap__timkiem__title{
+    padding-top: 5px;
+    padding-left: 10px;
+    padding-right: 22px;
+    font-size: 19px;
+    align-items: center;
+}
+.phieucap__timkiem__button{
+    align-items: center;
+    margin-right: 90px;
+    font-size: 18px;
+    display: inline-block; /*nằm ngang*/
+    text-decoration: none;
+    outline: none;
+    border: none;
+    color: #ffffff;
+    background-color:#21409A;
+    padding: 12px 48px;
+    border-radius: 10px;
+    cursor: pointer; 
+    /*để chuột vào có hình bàn tay */
+    transition: opacity .2s ease;
+    width: auto;
+    height: 15px;
+
+    padding-left: 10px;
+    padding-right: 18px;
+    padding-bottom: 15px;
+    padding-top: 4px;
+}
+.phieucap__timkiem__button:hover{
+    opacity: 0.8; 
+    /* giảm độ đục, đưa chuột vào mờ mờ */
+}
+
+.phieucap__timkiem__button i{
+    padding-right: 10px;
+    color: #ffffff;
+}
+.phieucap__table{
+    padding-top: 20px;
+    padding: 30px 40px;
+}
+
+.form-input{
+    border: 1px solid rgb(175, 175, 175);
+    border-radius: 4px;
+    width: 150px;
+    height: 40px;
+    padding: 0 20px;
+    transition: 0.25s ease;
+}
+
+
+.form-input:focus{
+    border-color: #f7941d;
+}
+
+.form-field{
+    position: relative;
+}
+
+.form-label{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 21px;
+    user-select: none;
+    color: #999;
+    pointer-events: none;
+    transition: 0.25s ease;
+}
+.form-input:not(:placeholder-shown) + .form-label,
+
+.form-input:focus + .form-label{
+    top:0;
+    /* muốn bay đi đâu thì chỉnh left với padding */
+    left: 11px;
+    padding: 0 10px;
+    display: inline-block;
+    background-color: #ffffff;
+    color: #f7941d;
+}

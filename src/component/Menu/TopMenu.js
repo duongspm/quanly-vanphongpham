@@ -1,18 +1,18 @@
 import React, { Component } from 'react';
 import '../Menu/style.css' ;
+import '../PhieuCap/style.css';
 import avata1 from '../../assets/images/avata1.png';
 import logo from '../../assets/images/logo_full.png';
 
 class TopMenu extends Component {
     render() {
         return (
-            <header id="header" className="fixed-top d-flex align-items-center ">
-                <div className="container d-flex align-items-center justify-content-between">
+            <header id="header" className="grid__full-width">
+                <div className="align-items-center justify-content-between">
                     <nav id="navbar" className="navbar">
                         <ul>
-                            <li><a className="logo_full d-flex align-items-center" href><img src={logo} alt="" className="img-fluid" /></a></li>
-                            <li><h1 className="title-right">QUẢN LÝ VPP TRONG CÔNG TY</h1></li>
-                           
+                            <li><a className="logo_full align-items-center" href><img src={logo} alt="" className="img-fluid" /></a></li>
+                            <li><h1 className="title-right">QUẢN LÝ VPP</h1></li>
                             <li>
                                 <a className="nav-link scrollto" href>
                                 </a>
@@ -37,7 +37,7 @@ class TopMenu extends Component {
                             <li>
                                 <a className="name" href>
                                     <ul>
-                                        <li className="dropdown name"><a href><span className="name">Uncle Duongg</span> <i className="bi bi-chevron-right" /></a>
+                                        <li className="dropdown name"><a href><span className="name">Uncle Duongg</span></a>
                                             <ul className="dropdown-menu dropdown-menu-end dropdown-menu-arrow profile">
                                                 <li className="dropdown-header">
                                                     <h6>Uncle Duongg</h6>
@@ -49,7 +49,7 @@ class TopMenu extends Component {
                                                 <li>
                                                     <a className="dropdown-item align-items-center" href>
                                                         <i className="fa fa-user dropdown-item-icon"></i>
-                                                        <p>My Profile</p>
+                                                        <span>My Profile</span>
                                                     </a>
                                                 </li>
                                                 <li>

@@ -120,6 +120,7 @@ h1, h2, h3, h4, h5, h6 {
   display: flex;
   list-style: none;
   align-items: center;
+  justify-content: space-between;
 }
 .navbar li {
   position: relative;
@@ -300,7 +301,6 @@ h1, h2, h3, h4, h5, h6 {
   width: 100%;
   position: relative;
   display: flex;
-  font-size: 104px;
 }
 
 .searchTerm {
@@ -333,10 +333,12 @@ h1, h2, h3, h4, h5, h6 {
 /*Resize the wrap to see the search bar change!*/
 .wrap{
   width: 290px;
-  position: absolute;
+  padding-bottom: 20px;
+  align-items: center;
+  /*position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%); */
 }
 .wrap i{
   color: #f7941d;
@@ -345,11 +347,14 @@ h1, h2, h3, h4, h5, h6 {
   color: aquamarine;
 }
 .title-right{
-  padding-right: 280px;
+  /* font-size: 24px; */
+  padding-right: 50px;
+  align-items: center;
 }
+/* 
 .title-right-300{
   padding-right: 250px;
-}
+} */
 .header__navbar-icon{
   margin-left: 40px;
   font-size: 24px;
@@ -468,7 +473,7 @@ h1, h2, h3, h4, h5, h6 {
     background: #fff;
     position: absolute;
     top: -7px;
-    right: 20px;
+    right: 180px;
     transform: rotate(45deg);
     border-top: 1px solid #eaedf1;
     border-left: 1px solid #eaedf1;
