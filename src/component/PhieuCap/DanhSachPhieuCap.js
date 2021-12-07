@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import '../PhieuCap/style.css';
 import Checkbox from '@mui/material/Checkbox';
+import { Link } from 'react-router-dom';
 //code giao diện load danh sách phiếu cấp trong này
 
 class LoadPhieuCap extends Component {
@@ -41,18 +42,12 @@ class LoadPhieuCap extends Component {
                     </div>
 
                     <div className="phieucap__timkiem--button">
-                        <button className="phieucap__timkiem__button">
-                        <i class="fa fa-plus-circle"></i>
+                        <Link className="phieucap__timkiem__button" to="/phieu-cap/them-phieu-cap">
+                            <i class="fa fa-plus-circle"></i>
                             Add
-                        </button>
+                        </Link>
                     </div>
                 </div>
-                {/* input animation */}
-                <div className="form-field">
-                    <input type="text" className="form-input" placeholder=" "></input>
-                    <label for="name" className="form-label">Name</label>
-                </div>
-                {/* input animation */}
                 <div className="phieucap__table">
                     <table className="table table-borderless table-hover">
                         <thead>

@@ -106,6 +106,9 @@ color: #f7941d;
     padding-right: 18px;
     padding-bottom: 15px;
     padding-top: 4px;
+/* 
+    display: flex;
+    justify-content:center ; */
 }
 .phieucap__timkiem__button:hover{
     opacity: 0.8; 
@@ -115,12 +118,14 @@ color: #f7941d;
 .phieucap__timkiem__button i{
     padding-right: 10px;
     color: #ffffff;
+    
 }
 .phieucap__table{
     padding-top: 20px;
     padding: 30px 40px;
 }
 
+/*input amination*/
 .form-input{
     border: 1px solid rgb(175, 175, 175);
     border-radius: 4px;
@@ -129,7 +134,6 @@ color: #f7941d;
     padding: 0 20px;
     transition: 0.25s ease;
 }
-
 
 .form-input:focus{
     border-color: #f7941d;
@@ -159,4 +163,72 @@ color: #f7941d;
     display: inline-block;
     background-color: #ffffff;
     color: #f7941d;
+}
+
+/*end input amination*/
+
+.them__body__title h1{
+    text-align: center;
+    padding-top: 20px;
+    color: #000;
+    font-weight: 600
+}
+.them__body__thongtinchung{
+    width: 95% ;
+    height: 200px;
+    border: 2px solid #000000;
+    margin-left: 40px;
+}
+.them__body__thongtinchung__title{
+    padding-left: 10px;
+    color: black;
+    font-size: 24px;
+    font-weight: bold
+}
+.them__body__form{
+    padding-top: 18px;
+    padding-left: 10px;
+    /* display: inline-block;
+    flex-direction: column;
+    display:flex; */
+
+}
+.form-field{
+    float: left;
+    margin-left: 20px;
+}
+.them__body__timkiem{
+    display:flex;
+    justify-content: space-between;
+}
+.themphieucap--timkiem{
+    padding-left: 28px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.them__body__timkiem__submit{
+    padding-right: 70px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+}
+.them__body__danhsachvpp{
+    width: 95% ;
+    height: 100%;
+    border: 2px solid #000000;
+    margin-left: 40px;
+}
+.fa-edit{
+    font-size: 24px;
+    color: green;
+    cursor: pointer;
+}
+.fa-trash{
+    font-size: 24px;
+    color: red;
+    cursor: pointer;
+}
+.table-hover i:hover{
+    opacity: 0.5;
+    /* giảm độ đục, đưa chuột vào mờ mờ */
 }

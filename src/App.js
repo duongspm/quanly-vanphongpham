@@ -9,6 +9,7 @@ import Nav from './component/Nav/Nav';
 import DanhSachPhieuNhap from './component/PhieuNhap/DanhSachPhieuNhap';
 import LoadPhieuCap from './component/PhieuCap/DanhSachPhieuCap';
 import DanhSachPhongBan from './component/PhongBan/DanhSachPhongBan';
+import ThemPhieuCap from './component/PhieuCap/ThemPhieuCap';
 
 function App() {
   return (
@@ -26,6 +27,9 @@ function App() {
         </Route>
         <Route path="/danh-sach-phieu-nhap">
           <DanhSachPhieuNhap/>
+        </Route>
+        <Route path="/phieu-cap/them-phieu-cap">
+          <ThemPhieuCap/>
         </Route>
       </Switch>
     </Router>
