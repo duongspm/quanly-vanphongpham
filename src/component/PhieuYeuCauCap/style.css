@@ -1,0 +1,172 @@
+.them .header{
+    padding: 0px 30px;
+    background-color: rgb(232, 232, 240);
+}
+
+.them h2{
+    color: rgb(0, 0, 0);
+    letter-spacing: 0.4px;
+    padding: 10px;
+    text-transform: capitalize;
+    font-size: 23px;
+}
+
+.them h3{
+    color: rgb(0, 0, 0);
+    letter-spacing: 0.4px;
+    text-align: center;
+    font-size: 26px;
+    text-transform: uppercase;
+}
+
+.info_form {
+    border: 1px solid #555;
+    margin: 0px 30px;
+    padding: 0px 25px;
+    padding-bottom: 20px;
+    float: left;
+    width: 92%;
+}
+
+.them .info_form h4{
+    color: rgb(0, 0, 0);
+    letter-spacing: 0.4px;    
+    font-size: 20px;
+    text-transform: capitalize;
+}
+
+.info_form .info_name, .info_form .info {
+    width: 20%;
+    margin-right: 40px;
+    padding: 0;
+    color: rgb(0, 0, 0);
+    float: left;
+}
+
+.info_form input[type=text] {
+    width: 90%;
+    padding: 7px 10px;
+    font-size:16px;
+}
+
+.info_form input[type=date] {
+    width: 90%;
+    padding: 6px 10px;
+}
+
+.row2{
+    padding-top: 20px;
+    clear: both;
+}
+
+button.btn-add {    
+    padding: 8px 15px;
+    background: #04b404;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    color: #fff;
+    margin-top: 20px;
+}
+
+button.btn-add i.fa.fa-plus-circle, button.btn-submit i.fa.fa-plus-circle {
+    margin-right: 10px;
+}
+
+.submit {
+    height: 70px;
+    padding-left: 55px;
+    padding-top: 30px;
+    clear: both;
+}
+
+.submit .search {
+    width: 20%;
+    border: 1px solid #ff8000;
+    border-radius: 10px;
+    float: left;
+}
+
+.submit i.fa.fa-search {
+    float: left;
+    padding: 10px 0px;
+    margin-left: 15px;
+    color: #ff8000;
+}
+
+.submit input[type=text] {
+    width: 100%;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 10px;
+}
+
+.submit button.btn-submit {
+    padding: 10px 15px;
+    margin-right: 50px;
+    font-size: 17px;
+    background-color: #08088a;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    float: right;
+}
+
+.list-vpp {
+    width: 92%;
+    border: 1px solid #555;
+    margin: 0px 30px;
+    padding: 0px 25px;
+    padding-bottom: 20px;
+    clear: both;
+}
+
+.list-vpp h4 {
+    color: rgb(0, 0, 0);
+    letter-spacing: 0.4px;    
+    font-size: 20px;
+    text-transform: capitalize;
+}
+
+.list-vpp table {
+    width: 100%;
+}
+
+.list-vpp table .check {
+    width: 2%;
+    text-align: left;
+}
+
+.list-vpp table .stt {
+    width: 10%;
+    text-align: center;
+}
+
+.list-vpp table .tenvpp {
+    width: 30%;
+}
+
+.list-vpp table .soluong, .list-vpp table .donvi {
+    width: 15%;
+    text-align: center;
+}
+
+.list-vpp table .quycach {
+
+}
+
+.list-vpp table .action {
+    width: 10%;
+    text-align: right;
+}
+
+.list-vpp table .action i.fa.fa-edit {
+    margin-right: 10px;
+    color: green;
+    font-size: 18px;
+}
+
+.list-vpp table .action i.fa.fa-trash-o {
+    color: red;
+    font-size: 18px;
+}
