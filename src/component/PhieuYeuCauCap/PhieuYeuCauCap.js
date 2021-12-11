@@ -43,7 +43,7 @@ class PhieuYeuCauCap extends Component {
                                 <label>Quy cách / Đặc tính</label>
                                 <input type="text" />
                             </div>
-                            <button className="btn-add"><i className="fa fa-plus-circle"></i>Add</button>
+                            <button className="btn btn-success btn-add"><i className="fa fa-plus-circle"></i>Add</button>
                         </div>
                     </div>
                     <div className="submit">
@@ -51,12 +51,12 @@ class PhieuYeuCauCap extends Component {
                             <span><i className="fa fa-search"></i></span>
                             <input type="text" placeholder="Tên VPP..."/>
                         </div>
-                        <button className="btn-submit"><i className="fa fa-plus-circle"></i>Submit</button>
+                        <button className="btn btn-submit"><i className="fa fa-plus-circle"></i>Submit</button>
                     </div>
                     <div className="list-vpp">
                         <h4>Danh sách VPP</h4>
-                        <table>
-                            <thead className="">
+                        <table class="table table-borderless table-hover">
+                            <thead>
                                 <tr>
                                     <th className="check">
                                         <label class="i-checks m-b-none">
